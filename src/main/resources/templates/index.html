@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+<title th:text="#{messages.main}">Main</title>
+<div th:replace="~{commons :: head}"></div>
+</head>
+<body>
+	<div th:replace="~{commons :: nav}"></div>
+	<section class="productList">
+		<div class="container">
+
+			<h3 class="text-center"
+				th:text="${names}?${names}:#{messages.products}">Products</h3>
+			<table>
+				<thead>
+					<tr>
+						<th th:text="#{messages.category}">Category</th>
+						<th th:text="#{messages.brands}">Brand</th>
+						<th th:text="#{messages.producer}">Producer</th>						
+						<th th:text="#{messages.name}">Name</th>
+						
+						<th th:text="#{messages.price}">Price</th>
+						<th th:text="#{messages.quantity}">Quantity</th>
+						<th th:text="#{messages.description}">Description</th>						
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="product:${products}">
+						<td th:text="${product.category.name}"></td>
+						<td th:text="${product.brand.name}"></td>
+						<td th:text="${product.producer.title}"></td>
+						<td th:text="${product.name}"></td>
+						
+						<td th:text="${product.price}"></td>
+						<td th:text="${product.quantity}"></td>
+						<td th:text="${product.description}"></td>
+						
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+</body>
+</html>
