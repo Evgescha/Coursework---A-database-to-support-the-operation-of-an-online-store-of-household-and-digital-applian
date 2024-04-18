@@ -1,4 +1,4 @@
-# 2010-940-Database-for-supporting-the-operation-of-an-online-store-of-household-and-digital-appliance
+# Database-for-supporting-the-operation-of-an-online-store-of-household-and-digital-appliance (2020)
 База данных для поддержки работы интернет-магазина бытовой и цифровой техники
 
 1.Тема проекта: База данных для поддержки работы интернет-магазина бытовой и циф-ровой техники.
